@@ -1,10 +1,11 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * is_prime_number - says if an integer is a prime number or not
- * @n: number to evaluate
+ * prime2 - calculates if a number is prime recursively
+ * @a: number to evaluate
+ * @b: number that iterates from 1 to n
  *
- * Return: 1 if n is a prime number, 0 if not
+ * Return: 1 if n is prime, 0 if not
  */
 int prime2(int a, int b)
 {
@@ -15,11 +16,10 @@ int prime2(int a, int b)
 	return (prime2(a, b + 1));
 }
 /**
- * is_prime_number - checks if a number is prime
- * @n: Number Integer
+ * is_prime_number - says if an integer is a prime number or not
+ * @n: number to evaluate
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 if n is a prime number, 0 if not
  */
 int is_prime_number(int n)
 {
